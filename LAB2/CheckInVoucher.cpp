@@ -1,12 +1,12 @@
 #include "CheckInVoucher.h"
 
-CheckInVoucher::CheckInVoucher(const std::string& GuestName, int floor_address, int room_address, int number_live_days, int total_price) : GuestName(GuestName), floor_address(floor_address), room_address(room_address), number_live_days(number_live_days), total_price(total_price)
+CheckInVoucher::CheckInVoucher(const std::string& guest_name, int floor_address, int room_address, int number_live_days, int total_price) : guest_name(guest_name), floor_address(floor_address), room_address(room_address), number_live_days(number_live_days), total_price(total_price)
 {
 }
 
 std::string CheckInVoucher::GetGuestName()
 {
-	return GuestName;
+	return guest_name;
 }
 
 int CheckInVoucher::GetTotalPrice()
