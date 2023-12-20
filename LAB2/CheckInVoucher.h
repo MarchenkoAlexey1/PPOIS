@@ -5,14 +5,14 @@
 
 class CheckInVoucher
 {
-	std::string GuestName;
+	std::string guest_name;
 	int floor_address;
 	int room_address;
 	int number_live_days;
 	int total_price;
 public:
 
-	CheckInVoucher(const std::string& GuestName, int floor_address, int room_address, int number_live_days, int total_price);
+	CheckInVoucher(const std::string& guest_name, int floor_address, int room_address, int number_live_days, int total_price);
 
 	std::string GetGuestName();
 	int GetTotalPrice();
